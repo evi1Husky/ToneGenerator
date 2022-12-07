@@ -18,9 +18,17 @@ body {
   background: rgb(203, 203, 203);
 }
 
+/* Fixes blurry canvas graphics */
+canvas {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
 main {
   width: 55rem;
-  height: 53rem;
+  height: 55rem;
   border: 1px rgb(121, 121, 121) solid;
   display: flex;
   flex-direction: column;

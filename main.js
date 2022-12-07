@@ -51,8 +51,10 @@ const waveFormButtons = document.querySelectorAll('.wave-form-buttons');
 const maxFrequencyRange = document.querySelector('.max-frequency-range');
 const canvas = document.getElementById("oscilloscope");
 const canvasContext = canvas.getContext("2d");
+canvas.width = '500'
+canvas.height = '230'
 canvasContext.fillStyle = "rgb(200, 200, 200)";
-canvasContext.lineWidth = 1;
+canvasContext.lineWidth = 1.5;
 canvasContext.strokeStyle = "rgb(0, 0, 0)";
 let soundWave = null;
 let waveForm = 'sine';
@@ -61,14 +63,12 @@ waveFormValue.textContent = `Waveform: ${waveForm}`
 function oscilloscope() {
   const bufferLength = soundWave.analyser.frequencyBinCount;
   const dataArray = new Uint8Array(bufferLength);
-  soundWave.analyser.getByteTimeDomainData(dataArray);
 
   function draw() {
     if (!soundWave) {
       window.cancelAnimationFrame(draw);
       return;
     }
-  
     requestAnimationFrame(draw);
   
     soundWave.analyser.getByteTimeDomainData(dataArray);
@@ -98,7 +98,7 @@ function drawLine() {
   canvasContext.fillRect(0, 0, canvas.width, canvas.height);
   canvasContext.beginPath();
   canvasContext.moveTo(0, canvas.height / 2);
-  canvasContext.lineTo(canvas.width, 100);
+  canvasContext.lineTo(canvas.width, canvas.height / 2);
   canvasContext.stroke();
 }
 
