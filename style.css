@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Dejavu Sans', sans-serif;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: rgb(203, 203, 203);
+  background: #1b1d21;
 }
 
 /* Fixes blurry canvas graphics */
@@ -26,15 +27,22 @@ canvas {
   image-rendering: crisp-edges;
 }
 
+canvas {
+  border: 1px solid #4a505a;
+  border-radius: 1rem;
+}
+
 main {
+  color: #919198;
   width: 55rem;
   height: 55rem;
-  border: 1px rgb(121, 121, 121) solid;
+  border: 0.5px solid #4a505a;
+  border-radius: 1rem;
+  background: #25282e;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background: gainsboro;
 }
 
 button {
