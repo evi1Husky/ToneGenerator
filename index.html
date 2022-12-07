@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='mobile-web-app-capable' content='yes'/>
+  <meta name='apple-mobile-web-app-capable' content='yes'/>
+  <meta name="theme-color" content="#1b1d21"/>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <title>title</title>
+</head>
+  <body>
+    <main>
+      <canvas id="oscilloscope" width="480" height="200"></canvas>
+      <input class="max-frequency-range" type="number" min="0" max="20000"
+      value="500">
+      <output class="current-frequency">Frequency: 60hz</output>
+      <input class="frequency-range" type="range" min="0" max="500"
+        value="60">
+      <output class="current-gain">Gain: 0.5</output>
+      <input class="gain-range" type="range" min="0" max="1"
+        value="0.5" step="0.01">
+      <output class="wave-form-output">Waveform: sine</output>
+      <div class="wave-form-buttons">
+        <button class="wave-form-button" value="sine">sine</button>
+        <button class="wave-form-button" value="square">square</button>
+        <button class="wave-form-button" value="sawtooth">sawtooth</button>
+        <button class="wave-form-button" value="triangle">triangle</button>
+      </div>
+      <button class="play-button">play</button>
+      <button class="stop-button">stop</button>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

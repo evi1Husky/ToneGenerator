@@ -1,1 +1,1 @@
-# Tone-Generator
+Sound wave generator with oscilloscope using Web Audio API to generate tones with different frequencies, amplitudes and forms and Canvas API for waveform visualization.
