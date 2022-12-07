@@ -4,7 +4,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Dejavu Sans', sans-serif;
+  font-family: 'Andale Mono';
 }
 
 body {
@@ -33,9 +33,9 @@ canvas {
 }
 
 main {
-  color: #919198;
+  color: #b2b2b6;
   width: 55rem;
-  height: 55rem;
+  height: 54.5rem;
   border: 0.5px solid #4a505a;
   border-radius: 1rem;
   background: #25282e;
@@ -46,6 +46,9 @@ main {
 }
 
 button {
+  color: #1b1d21;
+  font-family: 'Andale Mono';
+  font-weight: 800;
   width: 8rem;
   height: 3rem;
   margin: 2rem;
@@ -54,12 +57,42 @@ button {
 }
 
 input {
-  width: 90%;
+  color: #1b1d21;
+  font-family: 'Andale Mono';
+  appearance: none;
+  background: #a9a9ad;
+  height: 0.3rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  width: 85%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 1rem;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 1rem;
+  background: #a9a9ad;
+  border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -moz-border-radius: 1rem;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 1rem;
+  background: #a9a9ad;
+  border: none;
 }
 
 output {
   margin-top: 2rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1.3rem;
 }
 
 .stop-button {
@@ -67,7 +100,7 @@ output {
 }
 
 .gain-range{
-  width: 35%;
+  width: 40%;
 }
 
 .max-frequency-range {
@@ -78,13 +111,9 @@ output {
   outline: none;
   border: none;
   align-self: flex-start;
-  margin-left: 5.5rem; 
+  margin-left: 4rem; 
   position: absolute;
-  margin-bottom:18.4rem;
-}
-
-.currrent-gain {
-  margin-top: 0;
+  margin-bottom:17.3rem;
 }
 
 .wave-form-buttons {
@@ -96,7 +125,13 @@ output {
   margin-top: 1rem;
   margin-left: 0.7rem;
   margin-right: 0.7rem;
-  width: 6rem;
+  width: 7rem;
   height: 2.5rem;
   font-size: 1.2rem;
+}
+
+button {
+  background-color: #a9a9ad;
+  border: none;
+  border-radius: 2rem;
 }
