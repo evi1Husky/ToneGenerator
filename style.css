@@ -4,7 +4,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Andale Mono';
+  font-family: 'Andale Mono', Arial;
 }
 
 body {
@@ -47,7 +47,7 @@ main {
 
 button {
   color: #1b1d21;
-  font-family: 'Andale Mono';
+  font-family: 'Andale Mono', Arial;
   font-weight: 800;
   width: 8rem;
   height: 3rem;
@@ -58,7 +58,7 @@ button {
 
 input {
   color: #1b1d21;
-  font-family: 'Andale Mono';
+  font-family: 'Andale Mono', Arial;
   appearance: none;
   background: #a9a9ad;
   height: 0.3rem;
