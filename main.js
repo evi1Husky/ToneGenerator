@@ -51,8 +51,13 @@ const waveFormButtons = document.querySelectorAll('.wave-form-buttons');
 const maxFrequencyRange = document.querySelector('.max-frequency-range');
 const canvas = document.getElementById("oscilloscope");
 const canvasContext = canvas.getContext("2d");
-canvas.width = '500'
 canvas.height = '230'
+const screenWidth = screen.width;
+if (screenWidth < 450) {
+  canvas.width = String(screenWidth - 15);
+} else {
+  canvas.width = '500'
+}
 canvasContext.fillStyle = "#001300";
 canvasContext.lineWidth = 1.5;
 canvasContext.strokeStyle = "#00ff04";

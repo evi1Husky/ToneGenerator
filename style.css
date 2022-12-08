@@ -75,7 +75,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 1.3rem;
   width: 1.3rem;
   border-radius: 1rem;
-  background: #a9a9ad;
+  background: #b3b3b7;
   border: none;
 }
 
@@ -86,7 +86,7 @@ input[type="range"]::-moz-range-thumb {
   height: 1.3rem;
   width: 1.3rem;
   border-radius: 1rem;
-  background: #a9a9ad;
+  background: #b3b3b7;
   border: none;
 }
 
@@ -100,12 +100,12 @@ output {
 }
 
 .gain-range{
-  width: 40%;
+  width: 45%;
 }
 
 .max-frequency-range {
   width: 7rem;
-  height: 1.7rem;
+  height: 2rem;
   text-align: center;
   appearance: none;
   outline: none;
@@ -114,6 +114,7 @@ output {
   margin-left: 4rem; 
   position: absolute;
   margin-bottom:17.3rem;
+  border-radius: 0.7rem;
 }
 
 .wave-form-buttons {
@@ -126,12 +127,140 @@ output {
   margin-left: 0.7rem;
   margin-right: 0.7rem;
   width: 7rem;
-  height: 2.5rem;
-  font-size: 1.2rem;
+  height: 2.4rem;
+  font-size: 1.1rem;
 }
 
 button {
   background-color: #a9a9ad;
   border: none;
-  border-radius: 2rem;
+  border-radius: 0.7rem;
+}
+
+.stop-button:hover,
+.wave-form-button:hover,
+.max-frequency-range:hover,
+.stop-button:hover,
+.play-button:hover,
+.frequency-range:hover,
+.gain-range:hover,
+.frequency-range::-webkit-slider-thumb:hover,
+.gain-range::-webkit-slider-thumb:hover {
+  background-color: #d4d4d8;
+}
+
+.stop-button:active,
+.wave-form-button:active,
+.max-frequency-range:active,
+.stop-button:active,
+.play-button:active,
+.frequency-range::-webkit-slider-thumb:active,
+.gain-range::-webkit-slider-thumb:active {
+  background-color: #f0f0f4;
+}
+
+@media (max-width:420px) {
+  main {
+    width: 99.5%;
+    height: 99.5%;
+  }
+  .gain-range{
+    width: 50%;
+  }
+  .stop-button,
+  .play-button {
+    margin-bottom: 9rem;
+  }
+  .wave-form-button,
+  .gain-range,
+  .frequency-range,
+  #oscilloscope {
+    margin-bottom: 3rem;
+  }
+  .max-frequency-range {
+    margin-bottom: 32rem;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-height:915px) and (max-width:420px) {
+  .stop-button,
+  .play-button {
+    margin-bottom: 11rem;
+  }
+  .wave-form-button,
+  .gain-range,
+  .frequency-range,
+  #oscilloscope {
+    margin-bottom: 5rem;
+  }
+  .max-frequency-range {
+    margin-bottom: 40rem;
+  }
+}
+
+@media (max-height:860px) and (max-width:420px) {
+  .stop-button,
+  .play-button {
+    margin-bottom: 9rem;
+  }
+  .max-frequency-range {
+    margin-bottom: 38rem;
+  }
+}
+
+@media (max-height:760px) and (max-width:420px) {
+  .stop-button,
+  .play-button {
+    margin-bottom: 5rem;
+  }
+  .max-frequency-range {
+    margin-bottom: 31rem;
+  }
+  .wave-form-button,
+  .gain-range,
+  .frequency-range,
+  #oscilloscope {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-height:670px) and (max-width:420px) {
+  .stop-button,
+  .play-button {
+    margin-bottom: 3.8rem;
+  }
+  .max-frequency-range {
+    margin-bottom: 25rem;
+  }
+  .wave-form-button,
+  .gain-range,
+  .frequency-range,
+  #oscilloscope {
+    margin-bottom: 3rem;
+  }
+  .wave-form-button {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:320px) and (max-width:420px) {
+  .stop-button,
+  .play-button {
+    margin-bottom: 3.5rem;
+  }
+  .wave-form-button,
+  .gain-range,
+  .frequency-range,
+  #oscilloscope {
+    margin-bottom: 3rem;
+  }
+  .max-frequency-range {
+    margin-bottom: 24rem;
+    margin-left: 2.3rem;
+  }
+  .wave-form-button {
+    margin: 0.3rem;
+    margin-bottom: 1.5rem;
+  }
 }
